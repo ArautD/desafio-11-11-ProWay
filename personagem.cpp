@@ -2,10 +2,11 @@
 #include <iostream>
 using namespace std;
 
-Personagem::Personagem(string n, string t, double v, int f) { 
+Personagem::Personagem(string n, string t, double v, int c, double f) { 
     nome = n;
     tipo = t;
     vida = v;
+    ca = c;
     forca = f;
 }
 
@@ -13,15 +14,18 @@ void Personagem::atacar() {
     cout << nome << " do tipo " << tipo << " atacou com força " << forca << "!" << endl;
 }
 
-void Personagem::receberDano() {
-    double dano = forca * 0.1; 
+void Personagem::receberDano(int dano) {  
+    int danoFinal = dano - ca;
+    if (danoFinal < 0) danoFinal = 0;
+
     vida -= dano;
     if (vida < 0) vida = 0;
-    cout << nome << "recebeu " << dano << " de dano. \nVida restante: " << vida << endl;
+
+    cout << nome << "recebeu " << danoFinal << " de dano (graças a sua armadura). \nVida restante: " << vida << endl;
 }
 
 void Personagem::exibirStatus(){
-    cout << "Nome: " << nome << "\nTipo: " << tipo << "\nVida: " << vida << "\nForça: " << forca << endl;
+    cout << "Nome: " << nome << "\nTipo: " << tipo << "\nVida: " << vida << "\nArmadura: "<< ca << "\nForça: " << forca << endl;
 }
 
 int Personagem::getVida() {
