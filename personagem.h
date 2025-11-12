@@ -9,13 +9,14 @@ class Personagem {
         string nome;
         string tipo;
         double vida;
+        int ca;
         double forca;
 
     public:
-        Personagem(string n, string t, double v, double f);
+        Personagem(string n, string t, double v, int c, double f);
 
         void atacar();
-        void receberDano();
+        void receberDano(int dano);
         void exibirStatus();
 
         int getVida();
