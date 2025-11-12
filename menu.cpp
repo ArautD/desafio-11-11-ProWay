@@ -9,5 +9,41 @@ void menuPrincipal() {
     std::cout << "4. Diario dos Segredos" << std::endl; //Classe Diario Secreto (senha)
     std::cout << "5. Lâmpada" << std::endl; //Classe Lâmpada
     std::cout << "6. Ajudante3000" << std::endl; //Classe Robô
+    std::cout << "0. Sair" << std::endl;
+    std::cout << "================\nOpcão Selecionada: ";
+}
+
+void menuJokenpoAndDungeons() {
+    std::cout << "===== JOKENPO and Dungeons =====" << std::endl;
+    std::cout << "1. Criar Personagem" << std::endl;
+    std::cout << "2. Exibir Status" << std::endl;
+    std::cout << "3. Batalha" << std::endl;
+    std::cout << "5. Voltar ao Menu Principal" << std::endl;
+    std::cout << "================\nOpcão Selecionada: ";
+}
+
+void menuDigitalPet() {
+    std::cout << "===== DIGITAL PET =====" << std::endl;
+    std::cout << "1. Alimentar Pet" << std::endl;
+    std::cout << "2. Brincar com Pet" << std::endl;
+    std::cout << "3. Exibir Status do Pet" << std::endl;
+    std::cout << "4. Voltar ao Menu Principal" << std::endl;
+    std::cout << "================\nOpcão Selecionada: ";
+}
+
+void menuPlaylist() {
+    std::cout << "===== Playlist Musical =====" << std::endl;
+    std::cout << "1. Adicionar Música" << std::endl;
+    std::cout << "2. Próxima Música" << std::endl;
+    std::cout << "3. Música Atual" << std::endl;
+    std::cout << "4. Voltar ao Menu Principal" << std::endl;
+    std::cout << "================\nOpcão Selecionada: ";
+}
+
+void menuDiarioSecreto() {
+    std::cout << "===== Diario dos Segredos =====" << std::endl;
+    std::cout << "1. Escrever" << std::endl;
+    std::cout << "2. Ler Diário" << std::endl;
+    std::cout << "3. Voltar ao Menu Principal" << std::endl;
     std::cout << "================\nOpcão Selecionada: ";
 }
