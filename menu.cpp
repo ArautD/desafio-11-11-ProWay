@@ -47,3 +47,21 @@ void menuDiarioSecreto() {
     std::cout << "3. Voltar ao Menu Principal" << std::endl;
     std::cout << "================\nOpcão Selecionada: ";
 }
+
+void menuLampada() {
+    std::cout << "===== Lâmpada =====" << std::endl;
+    std::cout << "1. Ligar ou Desligar Lâmpada" << std::endl;
+    std::cout << "2. Trocar Cor da Lâmpada" << std::endl;
+    std::cout << "3. Ver Estado da Lâmpada" << std::endl;
+    std::cout << "4. Voltar ao Menu Principal" << std::endl;
+    std::cout << "================\nOpcão Selecionada: ";
+}
+
+void menuAjudante3000() {
+    std::cout << "===== Ajudante3000 =====" << std::endl;
+    std::cout << "1. Executar Tarefa" << std::endl;
+    std::cout << "2. Recarregar" << std::endl;
+    std::cout << "3. Status de Energia" << std::endl;
+    std::cout << "4. Voltar ao Menu Principal" << std::endl;
+    std::cout << "================\nOpcão Selecionada: ";
+}
