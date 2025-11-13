@@ -14,6 +14,7 @@ class Personagem {
 
     public:
         Personagem(string n, string t, double v, int c, double f);
+        static Personagem criarBoss();
 
         void atacar();
         void receberDano(int dano);
@@ -21,5 +22,6 @@ class Personagem {
 
         int getVida();
         int getForca();
+        std::string getNome();
 };
 #endif

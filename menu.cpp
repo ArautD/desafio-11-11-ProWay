@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#include "menu.h"
 
 void menuPrincipal() {
     std::cout << "===== Menu Principal =====" << std::endl;
@@ -11,6 +10,43 @@ void menuPrincipal() {
     std::cout << "6. Ajudante3000" << std::endl; //Classe Robô
     std::cout << "0. Sair" << std::endl;
     std::cout << "================\nOpcão Selecionada: ";
+}
+
+void execMenuPrinciapl() {
+    int opcao = 0;
+    bool rodando = true;
+
+    while (rodando) {
+        menuPrincipal();
+        std::cin >> opcao;
+
+        switch (opcao) {
+            case 1:
+                menuJokenpoAndDungeons();
+                break;
+            case 2:
+                menuDigitalPet();
+                break;
+            case 3:
+                menuPlaylist();
+                break;
+            case 4:
+                menuDiarioSecreto();
+                break;
+            case 5:
+                menuLampada();
+                break;
+            case 6:
+                menuAjudante3000();
+                break;
+            case 0:
+                std::cout << "Saindo do programa. Até mais!" << std::endl;
+                rodando = false;
+                break;
+            default:
+                std::cout << "Opção inválida. Tente novamente." << std::endl;
+        }
+    }
 }
 
 void menuJokenpoAndDungeons() {
