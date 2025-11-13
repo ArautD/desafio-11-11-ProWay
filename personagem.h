@@ -19,6 +19,9 @@ class Personagem {
         void atacar();
         void receberDano(int dano);
         void exibirStatus();
+        void criarPersonagem();
+        void exibirStatusPersonagem();
+        void iniciarBatalha();
 
         int getVida();
         int getForca();
